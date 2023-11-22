@@ -1,51 +1,22 @@
-<!DOCTYPE HTML>
-<!--
-	PANGEA
-	Bring the markets closer
--->
-<html>
-	<head>
-		<title>Pangea</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<h1>PANGEA</h1>
-				<p>Check out this space soon for awesome project<br />
-				your next big thing.</p>
-			</header>
-
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
-
-
-
-
-
-		<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Custom Styled Form</title>
+  <title>Pangea - Bring the markets closer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     /* Style for modal */
     .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
+      display: none;
+      position: fixed;
+      z-index: 1;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
     }
 
     .modal-content {
@@ -56,7 +27,6 @@
       width: 80%;
     }
 
-    /* Close button */
     .close {
       color: #aaa;
       float: right;
@@ -70,77 +40,106 @@
       text-decoration: none;
       cursor: pointer;
     }
+
+    /* Styling for Signup Section */
+    #signup-section {
+      text-align: center;
+      padding: 50px;
+      background: #f9f9f9;
+    }
+
+    #signup-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    #signup-section input[type="email"] {
+      padding: 10px;
+      margin: 10px;
+      width: 60%;
+      max-width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #signup-section input[type="submit"] {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #2ecc71;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    #signup-section input[type="submit"]:hover {
+      background: #27ae60;
+    }
   </style>
 </head>
-<body>
+<body class="is-preload">
 
-<!-- Trigger/Open The Modal -->
-<button id="openModalBtn">Open Sign-Up Form</button>
+  <!-- Header -->
+  <header id="header">
+    <h1>PANGEA</h1>
+    <p>Check out this space soon for an awesome project, your next big thing.</p>
+  </header>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- Signup Section -->
+  <section id="signup-section">
+    <h2>Sign Up for Updates</h2>
+    <form id="signup-form" method="post" action="#">
+      <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+      <input type="submit" value="Sign Up" />
+    </form>
+  </section>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <!-- Embed your Google Form here -->
-	  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5gHxm-ZPfCXoBqyh2DyJ48NQoC9bvWU0zVHbD5wnNW5eYvA/viewform?embedded=true" width="640" height="405" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Embed your Google Form here -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5gHxm-ZPfCXoBqyh2DyJ48NQoC9bvWU0zVHbD5wnNW5eYvA/viewform?embedded=true" width="640" height="405" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
   </div>
 
-</div>
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+      <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
 
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
 
-// Get the button that opens the modal
-var btn = document.getElementById("openModalBtn");
+  <script>
+    // Modal functionality
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("openModalBtn");
+    var span = document.getElementsByClassName("close")[0];
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
-</html>
-
-
-
-
-
-		
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>

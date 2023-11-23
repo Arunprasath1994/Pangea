@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
@@ -230,7 +231,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.75);
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 16pt;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -327,14 +328,14 @@ code {
   background: rgba(255, 255, 255, 0.125);
   border-radius: 6px;
   border: solid 2px rgba(255, 255, 255, 0.35);
-  font-family: "Courier New", monospace;
+  font-family: "Exo", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em; }
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "Courier New", monospace;
+  font-family: "Exo", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0; }
   pre code {
@@ -402,7 +403,7 @@ header h6 + p {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Exo';
     font-weight: 400; }
   .icon > .label {
     display: none; }
@@ -411,7 +412,7 @@ header h6 + p {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Brands'; }
+    font-family: 'Exo'; }
 
 /* List */
 ol {
@@ -468,7 +469,7 @@ form {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'Font Awesome 5 Free';
+      font-family: 'Exo';
       font-weight: 900; }
     form .message:before {
       margin-right: 0.5em; }
@@ -665,7 +666,7 @@ input[type="radio"] {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'Font Awesome 5 Free';
+      font-family: 'Exo';
       font-weight: 900; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {

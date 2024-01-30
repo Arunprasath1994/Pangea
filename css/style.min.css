@@ -415,6 +415,26 @@ background-image: url("img/RR.jpg");
     animation: slideIn 2s forwards;
 }
 
+
+.sliding-text-container h3 {
+  font-size: 2.5vw; /* Base font size */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .sliding-text-container h3 {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 576px) {
+  .sliding-text-container h3 {
+    font-size: 6vw; /* Adjust font size for even smaller screens */
+  }
+}
+
+
 @keyframes slideIn {
     0% {
         top: 100vh;
